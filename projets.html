@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mes Projets - Portfolio BTS SIO</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="additional-styles.css">
+<link rel="stylesheet" href="project-styles.css">
+<link rel="stylesheet" href="page-styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Style spécifique pour éviter le clignotement initial */
+  body {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  body.content-loaded {
+    opacity: 1;
+  }
+  
+  /* Classe pour forcer la visibilité */
+  .force-visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+</style>
+</head>
+<body class="page-transition force-visible">
+<header>
+    <div class="logo">
+        <a href="accueil.html">KA</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="bts.html">Présentation du BTS</a></li>
+            <li><a href="projets.html">Projets et compétences</a></li>
+            <li><a href="stages.html">Rapports de stage</a></li>
+            <li><a href="veille.html">Veille informatique</a></li>
+            <li><a href="cv.html">Mon CV</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<div class="mobile-menu">
+    <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="bts.html">Présentation du BTS</a></li>
+        <li><a href="projets.html">Projets et compétences</a></li>
+        <li><a href="stages.html">Rapports de stage</a></li>
+        <li><a href="veille.html">Veille informatique</a></li>
+        <li><a href="cv.html">Mon CV</a></li>
+    </ul>
+</div>
+
+<main>
+    <section class="animate-on-scroll force-visible">
+        <h1>Mes Projets</h1>
+        <div class="section-divider"></div>
+        
+        <h2>Présentation de mes projets</h2>
+        <p>Voici une sélection de mes projets réalisés dans le cadre de mon BTS SIO, option SISR. Ces projets m'ont permis de développer de nombreuses compétences techniques et professionnelles dans l'administration des réseaux, la gestion des systèmes et la sécurité informatique.</p>
+        
+        <div class="section-divider"></div>
+        
+        <h3>Compétences acquises</h3>
+        
+        <div class="skills-container animate-on-scroll force-visible">
+            <!-- Nouvelle présentation des compétences par domaines -->
+            <div class="skills-domain">
+                <div class="domain-header">
+                    <div class="domain-icon"><i class="fas fa-network-wired"></i></div>
+                    <h4>Réseaux et Infrastructure</h4>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">Administration des réseaux</span>
+                        <span class="skill-level advanced">Avancé</span>
+                        <p class="skill-description">Configuration de routeurs, switches, VLANs et mise en place de solutions VPN</p>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Virtualisation</span>
+                        <span class="skill-level intermediate">Intermédiaire</span>
+                        <p class="skill-description">Maîtrise des environnements Hyper-V, VMware et VirtualBox</p>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Configuration Wi-Fi</span>
+                        <span class="skill-level intermediate">Intermédiaire</span>
+                        <p class="skill-description">Mise en place et sécurisation de réseaux sans fil</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-domain">
+                <div class="domain-header">
+                    <div class="domain-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Sécurité</h4>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">Sécurité informatique</span>
+                        <span class="skill-level intermediate">Intermédiaire</span>
+                        <p class="skill-description">Mise en place de pare-feu et politiques de sécurité</p>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Gestion des accès</span>
+                        <span class="skill-level advanced">Avancé</span>
+                        <p class="skill-description">Configuration des droits utilisateurs et authentification</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-domain">
+                <div class="domain-header">
+                    <div class="domain-icon"><i class="fas fa-server"></i></div>
+                    <h4>Systèmes</h4>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">Configuration des serveurs</span>
+                        <span class="skill-level advanced">Avancé</span>
+                        <p class="skill-description">Installation et configuration de serveurs Windows et Linux</p>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Scripting</span>
+                        <span class="skill-level intermediate">Intermédiaire</span>
+                        <p class="skill-description">Automatisation avec PowerShell et Bash</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-domain">
+                <div class="domain-header">
+                    <div class="domain-icon"><i class="fas fa-database"></i></div>
+                    <h4>Données</h4>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">Bases de données</span>
+                        <span class="skill-level beginner">Débutant</span>
+                        <p class="skill-description">Conception et gestion de bases SQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Sauvegarde et restauration</span>
+                        <span class="skill-level intermediate">Intermédiaire</span>
+                        <p class="skill-description">Mise en place de stratégies de backup et recovery</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-legend">
+                <p>Légende des niveaux de compétence :</p>
+                <div class="legend-items">
+                    <div class="legend-item">
+                        <span class="skill-level beginner">Débutant</span>
+                        <span class="legend-description">Connaissances de base, capacité à réaliser des tâches simples</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="skill-level intermediate">Intermédiaire</span>
+                        <span class="legend-description">Bonne maîtrise, autonomie sur la plupart des tâches</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="skill-level advanced">Avancé</span>
+                        <span class="legend-description">Maîtrise approfondie, capacité à gérer des situations complexes</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="skill-level expert">Expert</span>
+                        <span class="legend-description">Expertise complète, capacité à former et à innover</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <h3>Projets réalisés</h3>
+        
+        <div class="projects-container">
+            <div class="project-card animate-on-scroll force-visible">
+                <div class="project-card-header">
+                    <h4>Configuration d’un pare-feu et d’un proxy Stormshield</h4>
+                </div>
+                <div class="project-card-body">
+                    <p>Ce projet consistait à installer, configurer et administrer un pare-feu Stormshield afin de sécuriser un réseau local. Il incluait la mise en place de règles de filtrage, la gestion des accès via un proxy et l’analyse du trafic réseau pour assurer une protection efficace contre les menaces extérieures.</p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Firewall</span>
+                        <span class="tech-tag">Proxy</span>
+                        <span class="tech-tag">Sécurité Réseau</span>
+                        <span class="tech-tag">Filtrage</span>
+                        <span class="tech-tag">Routage</span>
+                    </div>
+                </div>
+                <div class="project-card-footer">
+                    <a href="TP_PARE-FEU-PROXY_DELAGE-DAVIES&AUCHER_Anne-Lou&Kyllian-30_03_2025.pdf" target="_blank" class="download-btn">
+                        <i class="fas fa-download"></i> Voir le compte-rendu
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card animate-on-scroll force-visible">
+                <div class="project-card-header">
+                    <h4>Configuration de commutateurs Cisco/HP/Alcatel</h4>
+                </div>
+                <div class="project-card-body">
+                    <p>Ce projet visait à configurer et administrer des commutateurs HP, Cisco et Alcatel pour optimiser la gestion du réseau. Il incluait la mise en place et les tests de VLAN, la sécurisation des connexions via SSH, le transfert des configurations par TFTP, ainsi que l’optimisation des performances et de la sécurité des ports. L’agrégation de liens et le protocole STP ont également été implémentés pour assurer la redondance et la stabilité du réseau. Enfin, des mécanismes de gestion du temps, des journaux et du monitoring ont été configurés à l’aide de NTP, SNMP et des logs systèmes.</p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Cisco</span>
+                        <span class="tech-tag">HP</span>
+                        <span class="tech-tag">Alcatel</span>
+                        <span class="tech-tag">Sécurité</span>
+                        <span class="tech-tag">VLAN</span>
+                        <span class="tech-tag">TFTP</span>
+                        <span class="tech-tag">SSH</span>
+                        <span class="tech-tag">Agrégation</span>
+                    </div>
+                </div>
+                <div class="project-card-footer">
+                    <a href="TP_COMMUTATEURS_DELAGE-DAVIES&AUCHER_Anne-Lou&Kyllian-04_01_2025.pdf" target="_blank" class="download-btn">
+                        <i class="fas fa-download"></i> Voir le compte-rendu
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card animate-on-scroll force-visible">
+                <div class="project-card-header">
+                    <h4>Gestion d’Hyper-V en mode Core et administration des machines virtuelles</h4>
+                </div>
+                <div class="project-card-body">
+                    <p>Ce projet consistait à déployer et administrer un serveur Hyper-V en mode Core, sans interface graphique, afin d’optimiser les performances et la sécurité. La gestion des machines virtuelles a été réalisée à distance à l’aide d’outils comme PowerShell et l’Hyper-V Manager. Le projet incluait également la configuration du réseau virtuel, la gestion des snapshots et l’automatisation de certaines tâches d’administration.</p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Hyper-V</span>
+                        <span class="tech-tag">Virtualisation</span>
+                        <span class="tech-tag">Windows Server</span>
+                        <span class="tech-tag">PowerShell</span>
+                    </div>
+                </div>
+                <div class="project-card-footer">
+                    <a href="TP_HYPERV-CORE_DELAGE-DAVIES&AUCHER_Anne-Lou&Kyllian-15_10_2024.pdf" target="_blank" class="download-btn">
+                        <i class="fas fa-download"></i> Voir le compte-rendu
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card animate-on-scroll force-visible">
+                <div class="project-card-header">
+                    <h4>Mise en place d’une infrastructure Hyper-V haute disponibilité avec réplication et clustering</h4>
+                </div>
+                <div class="project-card-body">
+                    <p>Ce projet consistait à configurer une infrastructure Hyper-V résiliente en mettant en place un cluster de virtualisation et un mécanisme de réplication entre plusieurs hôtes. L’objectif était d’assurer la continuité de service des machines virtuelles en cas de défaillance d’un serveur. Le projet incluait la configuration du cluster Windows Failover, la gestion des ressources partagées, la mise en place d’un stockage iSCSI, ainsi que les tests de bascule et de reprise après sinistre.</p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Hyper-V</span>
+                        <span class="tech-tag">Clustering</span>
+                        <span class="tech-tag">Réplication</span>
+                        <span class="tech-tag">Virtualisation</span>
+                        <span class="tech-tag">Haute disponibilité/PCA</span>
+                    </div>
+                </div>
+                <div class="project-card-footer">
+                    <a href="TP_HYPERV_DELAGE-DAVIES&AUCHER_Anne-Lou&Kyllian-15_10_2024.pdf" target="_blank" class="download-btn">
+                        <i class="fas fa-download"></i> Voir le compte-rendu
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card animate-on-scroll force-visible">
+                <div class="project-card-header">
+                    <h4>Mise en place d’une stratégie de sauvegarde et de restauration</h4>
+                </div>
+                <div class="project-card-body">
+                    <p>Cet atelier portait sur la mise en place d’une solution de sauvegarde afin de garantir l’intégrité et la disponibilité des données. Différentes méthodes de sauvegarde ont été explorées, notamment les sauvegardes complètes, incrémentales et différentielles. L’atelier comprenait également la configuration d’un logiciel de sauvegarde, la planification des tâches automatisées et la mise en place d’un plan de restauration des données en cas de sinistre.</p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Sauvegarde</span>
+                        <span class="tech-tag">PCA/PRA</span>
+                        <span class="tech-tag">Sécurité</span>
+                        
+                    </div>
+                </div>
+                <div class="project-card-footer">
+                    <a href="Atelier Sauvegarde.pdf" target="_blank" class="download-btn">
+                        <i class="fas fa-download"></i> Voir le compte-rendu
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card animate-on-scroll force-visible">
+                <div class="project-card-header">
+                    <h4>Déploiement d’un serveur GLPI avec inventaire automatisé des clients</h4>
+                </div>
+                <div class="project-card-body">
+                    <p>Ce projet consistait à installer et configurer un serveur GLPI pour la gestion des ressources informatiques d’un réseau. L’inventaire des machines clientes a été automatisé à l’aide de l’agent GLPI, permettant une remontée en temps réel des informations matérielles et logicielles. Le projet incluait également la configuration des droits utilisateurs, la gestion des tickets d’incident et la personnalisation des fonctionnalités pour répondre aux besoins de l’infrastructure.</p>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Ticketing</span>
+                        <span class="tech-tag">Serveur Linux</span>
+                        <span class="tech-tag">Inventaire</span>
+                        <span class="tech-tag">Administartion Système</span>
+                    </div>
+                </div>
+                <div class="project-card-footer">
+                    <a href="CR Atelier GLPI.pdf" target="_blank" class="download-btn">
+                        <i class="fas fa-download"></i> Voir le compte-rendu
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p><i class="fas fa-envelope"></i> kyllian.aucher@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +33 6 63 12 25 66</p>
+        </div>
+        <div class="footer-section">
+            <h3>Liens rapides</h3>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="projets.html">Projets</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Réseaux sociaux</h3>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/kyllian-aucher/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/kyllian-a" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://tryhackme.com/p/Kyky." class="social-icon">THM</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Kyllian Aucher. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<div class="theme-switch-container">
+    <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+    </label>
+</div>
+
+<script src="main.js"></script>
+
+
+</body>
+</html>
+

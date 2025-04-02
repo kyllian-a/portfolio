@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV - Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="additional-styles.css">
+    <link rel="stylesheet" href="cv-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-transition">
+    <header>
+        <div class="logo">
+            <a href="accueil.html">KA</a>
+        </div>
+        <nav>
+            <ul>
+                
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="bts.html">Présentation du BTS</a></li>
+                <li><a href="projets.html">Projets et compétences</a></li>
+                <li><a href="stages.html">Rapports de stage</a></li>
+                <li><a href="veille.html">Veille informatique</a></li>
+                <li><a href="cv.html">Mon CV</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="bts.html">Présentation du BTS</a></li>
+            <li><a href="projets.html">Projets et compétences</a></li>
+            <li><a href="stages.html">Rapports de stage</a></li>
+            <li><a href="veille.html">Veille informatique</a></li>
+            <li><a href="cv.html">Mon CV</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="cv" class="animate-on-scroll">
+            <h1>Mon CV</h1>
+            <div class="section-divider"></div>
+            
+            <div class="cv-container">
+                <div class="cv-header animate-on-scroll">
+                    <div class="cv-photo">
+                        <img src="photo.jpg" alt="Kyllian Aucher" class="avatar">
+                    </div>
+                    <div class="cv-intro">
+                        <h2>Kyllian Aucher</h2>
+                        <p class="cv-title">Étudiant en BTS SIO, option SISR</p>
+                        <p class="cv-description">Passionné par l'administration des systèmes et réseaux, je suis à la recherche d'opportunités pour développer mes compétences et contribuer à des projets innovants.</p>
+                    </div>
+                </div>
+                
+                <div class="section-divider"></div>
+                
+                <div class="cv-section animate-on-scroll">
+                    <h3><i class="fas fa-graduation-cap"></i> Formation</h3>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <h4>BTS Services Informatiques aux Organisations (SIO)</h4>
+                            <span class="cv-date">2023 - 2025</span>
+                        </div>
+                        <p class="cv-location">St-Jo Sup, Le Havre</p>
+                        <p>Option SISR (Solutions d'Infrastructure, Systèmes et Réseaux)</p>
+                    </div>
+                    
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <h4>Baccalauréat Général</h4>
+                            
+                            <span class="cv-date">2020 - 2023</span>
+                        </div>
+                        <p class="cv-location">Institution privée Saint-Joseph, Le Havre</p>
+                        <p>Mention très bien avec félicitations du jury</p>
+                        <p>Spécialités Mathématiques et Sciences économiques et sociales (SES) ainsi que Histoire Géopolitique (HGGSP)</p>
+                    </div>
+                </div>
+                
+                <div class="cv-section animate-on-scroll">
+                    <h3><i class="fas fa-briefcase"></i> Expérience professionnelle</h3>
+                    
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <h4>Stagiaire au support informatique</h4>
+                            <span class="cv-date">Janvier - Février 2025 </span>
+                        </div>
+                        <p class="cv-location">Caux-Seine Agglo, Lillebonne</p>
+                        <ul class="cv-responsibilities">
+                            <li>Gestion des infrastructures informatiques</li>
+                            <li>Ticketing</li>
+                            <li>Support de niveau 1 et 2</li>
+                            <li>Maintenance du réseau</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <h4>Stagiaire en administration systèmes et réseaux</h4>
+                            <span class="cv-date">Mai - Juin 2024</span>
+                        </div>
+                        <p class="cv-location">Ligue de Voile de Normandie, Le Havre</p>
+                        <ul class="cv-responsibilities">
+                            <li>Administration des équipements informatiques</li>
+                            <li>Mise en place de solutions de sécurité</li>
+                            <li>Support technique aux utilisateurs</li>
+                            <li>Mise en place d'un Windows Server</li>
+                        </ul>
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="cv-section animate-on-scroll">
+                    <h3><i class="fas fa-laptop-code"></i> Compétences techniques</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Systèmes d'exploitation</h4>
+                            <ul class="cv-skills">
+                                <li><span class="skill-tag">Windows Server</span></li>
+                                <li><span class="skill-tag">Linux (Debian, Ubuntu)</span></li>
+                                <li><span class="skill-tag">Windows 10/11</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Réseaux</h4>
+                            <ul class="cv-skills">
+                                <li><span class="skill-tag">TCP/IP</span></li>
+                                <li><span class="skill-tag">VLAN</span></li>
+                                <li><span class="skill-tag">VPN</span></li>
+                                <li><span class="skill-tag">Pare-feu</span></li>
+                                <li><span class="skill-tag">Switchs</span></li>
+                                <li><span class="skill-tag">Routeurs</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Virtualisation</h4>
+                            <ul class="cv-skills">
+                                <li><span class="skill-tag">Hyper-V</span></li>
+                                <li><span class="skill-tag">VMware</span></li>
+                                <li><span class="skill-tag">VirtualBox</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Scripting</h4>
+                            <ul class="cv-skills">
+                                <li><span class="skill-tag">PowerShell</span></li>
+                                <li><span class="skill-tag">Bash</span></li>
+                                <li><span class="skill-tag">Python (bases)</span></li>
+                                <li><span class="skill-tag">C#</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cv-section animate-on-scroll">
+                    <h3><i class="fas fa-language"></i> Langues</h3>
+                    <div class="languages-container">
+                        <div class="language-item">
+                            <span class="language-name">Français</span>
+                            <div class="language-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-label">Langue maternelle</span>
+                            </div>
+                        </div>
+                        
+                        <div class="language-item">
+                            <span class="language-name">Anglais</span>
+                            <div class="language-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                                <span class="level-label">Niveau B2</span>
+                            </div>
+                        </div>
+
+                        <div class="language-item">
+                            <span class="language-name">Italien</span>
+                            <div class="language-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                                <span class="level-dot"></span>
+                                <span class="level-dot"></span>
+                                <span class="level-label">Niveau scolaire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cv-section animate-on-scroll">
+                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="certifications-container">
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h4>Fortinet Certified Fundamentals in Cybersecurity</h4>
+                                <p>Date d'obtention : 26/03/2025</p>
+                            </div>
+                        </div>
+                        
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h4>MOOC RGPD</h4>
+                                <p>Date d'obtention : 7/10/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cv-actions animate-on-scroll">
+                    <a href="CV_AUCHER.pdf" target="_blank" class="download-btn">
+                        <i class="fas fa-download"></i> Télécharger mon CV complet
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> kyllian.aucher@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +33 6 63 12 25 66</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Réseaux sociaux</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kyllian-aucher/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/kyllian-a" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://tryhackme.com/p/Kyky." class="social-icon">THM</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kyllian Aucher. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <div class="theme-switch-container">
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <script src="main.js"></script>
+    
+    
+</body>
+</html>
+

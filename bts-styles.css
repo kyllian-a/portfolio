@@ -1,0 +1,327 @@
+/* Styles pour la page BTS */
+.bts-overview {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.bts-image {
+  flex: 0 0 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.bts-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.bts-image:hover img {
+  transform: scale(1.05);
+}
+
+.bts-description {
+  flex: 1;
+}
+
+.bts-description h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.bts-description p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.sisr-option {
+  margin-bottom: 40px;
+}
+
+.sisr-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.feature-card {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.1);
+  color: var(--secondary-color);
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.feature-card:hover h3 {
+  color: var(--secondary-color);
+}
+
+.skills-section {
+  margin-bottom: 40px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skill-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item:hover .skill-icon {
+  background-color: var(--secondary-color);
+  transform: rotate(15deg);
+}
+
+.skill-details {
+  flex: 1;
+}
+
+.skill-details h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.skill-item:hover .skill-details h3 {
+  color: var(--secondary-color);
+}
+
+.career-section {
+  margin-bottom: 40px;
+}
+
+.career-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.career-card {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.career-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.career-card:hover .career-icon {
+  transform: scale(1.1);
+  color: var(--secondary-color);
+}
+
+.career-card h3 {
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.career-card:hover h3 {
+  color: var(--secondary-color);
+}
+
+.conclusion {
+  font-style: italic;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .bts-overview {
+    flex-direction: column;
+  }
+
+  .bts-image {
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+
+  .skill-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skill-icon {
+    margin-bottom: 15px;
+  }
+}
+
+.summary-table-container {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px 0;
+  box-shadow: var(--shadow);
+}
+
+.summary-table-actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.summary-table-preview {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: 300px;
+}
+
+.preview-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.preview-image:hover {
+  transform: scale(1.02);
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: var(--card-background);
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: var(--text-color);
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  color: var(--primary-color);
+}
+
+.modal-body {
+  margin-top: 20px;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .summary-table-actions {
+      flex-direction: column;
+  }
+  
+  .modal-content {
+      width: 95%;
+      margin: 10% auto;
+  }
+}

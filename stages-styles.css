@@ -1,0 +1,253 @@
+/* Styles pour la page stages */
+.stages-intro {
+  margin-bottom: 30px;
+}
+
+.stages-timeline {
+  position: relative;
+  margin: 40px 0;
+}
+
+.stages-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 120px;
+  width: 3px;
+  background: var(--primary-color);
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.timeline-date {
+  width: 120px;
+  text-align: right;
+  padding-right: 30px;
+  font-weight: 600;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.timeline-date span {
+  display: inline-block;
+  background-color: var(--card-background);
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-date span {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateX(-5px);
+}
+
+.timeline-badge {
+  position: absolute;
+  top: -25px;
+  right: 30px;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transform: rotate(-10deg);
+}
+
+.timeline-content {
+  flex: 1;
+  padding-left: 30px;
+  position: relative;
+}
+
+.timeline-content::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -7px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content::before {
+  background-color: var(--secondary-color);
+  transform: scale(1.3);
+}
+
+.stage-card {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stage-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.future-stage {
+  border: 2px dashed var(--primary-color);
+  opacity: 0.9;
+}
+
+.stage-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stage-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.stage-duration {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.stage-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stage-image {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.stage-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.stage-card:hover .stage-image img {
+  transform: scale(1.05);
+}
+
+.stage-description h3 {
+  color: var(--primary-color);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.stage-missions {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.stage-missions li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.stage-missions li i {
+  color: var(--primary-color);
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.stage-missions li:hover i {
+  transform: scale(1.2);
+  color: var(--secondary-color);
+}
+
+.stage-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.stage-footer {
+  padding: 15px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.coming-soon {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: rgba(0, 115, 230, 0.1);
+  color: var(--primary-color);
+  border-radius: 5px;
+  font-style: italic;
+}
+
+.stages-conclusion {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.stages-conclusion h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.stages-conclusion p {
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .stages-timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+  }
+
+  .timeline-date {
+    width: 100%;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .timeline-badge {
+    top: 0;
+    right: auto;
+    left: 60px;
+  }
+
+  .timeline-content {
+    padding-left: 60px;
+  }
+
+  .timeline-content::before {
+    left: 23px;
+  }
+
+  .stage-body {
+    flex-direction: column;
+  }
+}
+

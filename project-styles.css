@@ -1,0 +1,239 @@
+/* Force la visibilité des éléments */
+.force-visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+/* Styles pour les tags de technologies */
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tech-tag {
+  background-color: rgba(0, 115, 230, 0.1);
+  color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Styles pour les projets */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Modification pour rendre les titres des cartes de projet visibles */
+.project-card-header h4 {
+  color: #000000; /* Noir pour le mode clair */
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Couleur différente pour le mode sombre */
+.dark-theme .project-card-header h4 {
+  color: #ffffff; /* Blanc pour le mode sombre */
+}
+
+/* Nouvelle présentation des compétences */
+.skills-container {
+  margin: 30px 0;
+}
+
+.skills-domain {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-domain:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.domain-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.domain-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skills-domain:hover .domain-icon {
+  transform: rotate(15deg);
+  background-color: var(--secondary-color);
+}
+
+.domain-header h4 {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.skill-item {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.dark-theme .skill-item {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.skill-item:hover {
+  transform: translateX(5px);
+}
+
+.skill-name {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.skill-level {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.skill-level.beginner {
+  background-color: #e9f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.skill-level.intermediate {
+  background-color: #e3f2fd;
+  color: #1565c0;
+  border: 1px solid #bbdefb;
+}
+
+.skill-level.advanced {
+  background-color: #fff8e1;
+  color: #ff8f00;
+  border: 1px solid #ffecb3;
+}
+
+.skill-level.expert {
+  background-color: #fce4ec;
+  color: #c2185b;
+  border: 1px solid #f8bbd0;
+}
+
+.dark-theme .skill-level.beginner {
+  background-color: rgba(46, 125, 50, 0.2);
+  color: #81c784;
+  border: 1px solid rgba(46, 125, 50, 0.4);
+}
+
+.dark-theme .skill-level.intermediate {
+  background-color: rgba(21, 101, 192, 0.2);
+  color: #64b5f6;
+  border: 1px solid rgba(21, 101, 192, 0.4);
+}
+
+.dark-theme .skill-level.advanced {
+  background-color: rgba(255, 143, 0, 0.2);
+  color: #ffd54f;
+  border: 1px solid rgba(255, 143, 0, 0.4);
+}
+
+.dark-theme .skill-level.expert {
+  background-color: rgba(194, 24, 91, 0.2);
+  color: #f48fb1;
+  border: 1px solid rgba(194, 24, 91, 0.4);
+}
+
+.skill-description {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  margin: 0;
+}
+
+.skills-legend {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: var(--shadow);
+}
+
+.skills-legend p {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.legend-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legend-description {
+  font-size: 0.85rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .legend-items {
+    grid-template-columns: 1fr;
+  }
+}
+
