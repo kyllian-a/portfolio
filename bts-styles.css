@@ -271,8 +271,7 @@
   transform: scale(1.02);
 }
 
-
-/* Modal Styles */
+/* Modal styles */
 .modal {
   display: none;
   position: fixed;
@@ -316,14 +315,13 @@
   overflow: auto;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .summary-table-actions {
-    flex-direction: column;
+      flex-direction: column;
   }
-
+  
   .modal-content {
-    width: 95%;
-    margin: 10% auto;
+      width: 95%;
+      margin: 10% auto;
   }
 }
