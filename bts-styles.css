@@ -271,57 +271,68 @@
   transform: scale(1.02);
 }
 
-/* Modal styles */
+/* Modal styles - Version corrigée */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  overflow: auto;
+    display: none;
+    position: fixed; /* Important : fixed pour rester dans le viewport */
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    /* Ajoutez ces propriétés pour centrer le contenu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.show {
+    display: flex; /* Utilisez cette classe pour afficher le modal */
 }
 
 .modal-content {
-  background-color: var(--card-background);
-  margin: 5% auto;
-  padding: 20px;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 1000px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  position: relative;
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 80vh; /* Limitez la hauteur pour éviter les débordements */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: auto; /* Permettre le scroll à l'intérieur du modal si nécessaire */
+    margin: 0; /* Supprimez les marges automatiques */
 }
 
 .close-modal {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  color: var(--text-color);
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
 }
 
 .close-modal:hover {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .modal-body {
-  margin-top: 20px;
-  max-height: 70vh;
-  overflow: auto;
+    margin-top: 20px;
+    max-height: 60vh;
+    overflow: auto;
 }
 
 @media (max-width: 768px) {
-  .summary-table-actions {
-      flex-direction: column;
-  }
-  
-  .modal-content {
-      width: 95%;
-      margin: 10% auto;
-  }
+    .modal-content {
+        width: 95%;
+        max-height: 90vh;
+    }
+    
+    .modal-body {
+        max-height: 70vh;
+    }
 }
